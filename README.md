@@ -35,11 +35,12 @@ TWRP:
 - Go to the `Reboot` menu and see which slot is active
 - If it says `Slot A`, then select `Slot B` to be the active slot, and boot TWRP again
 
-- With `Slot B` as active:
+
+**With `Slot B` as active:**
 - Install zip file: `jasmine_sprout_stock_android9.zip`
 - Now switch back to `Slot A` and boot TWRP again
 
-- With `Slot A` as active:
+**With `Slot A` as active:**
 - Install image: `boot.img` to `Boot` partition
 - Install zip file: `droidian-rootfs-api28gsi_arm64_20210531.zip` 
 - Install zip file: `droidian-devtools_arm64_20210531.zip`
