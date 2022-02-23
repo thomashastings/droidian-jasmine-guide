@@ -10,9 +10,8 @@ A collection of tips on how to install and use Droidian on the Xiaomi Mi A2 (jas
 
 ## Installation
 ### 0. Download files
-- [Droidian rootfs](https://github.com/droidian-images/rootfs-api28gsi-all/releases/download/droidian%2Fbullseye%2F22/droidian-rootfs-api28gsi-arm64_20210531.zip) (specific version needed)
-- [Droidian devtools](https://github.com/droidian-images/rootfs-api28gsi-all/releases/download/droidian%2Fbullseye%2F22/droidian-devtools-amd64_20210531.zip) (specific version needed)
-- [Boot image](https://github.com/Droidian-Mi-A2-6X/linux-android-xiaomi-wayne-jasmine/releases/download/20210913/boot.img)
+- [Droidian `rootfs` and `devtools`](https://github.com/droidian-images/rootfs-api28gsi-all/releases) for `arm64`
+- [Adaptation](https://github.com/thomashastings/droidian-recovery-adaptation-jasmine/releases)
 - [Android 9 Pie Firmware](https://github.com/ubports-xiaomi-sdm660/artifacts/releases/download/v0.1/jasmine_sprout_stock_android9.zip)
 - Latest [TWRP image](https://dl.twrp.me/jasmine_sprout/)
 
@@ -38,13 +37,13 @@ TWRP:
 
 **With `Slot B` as active:**
 - Install zip file: `jasmine_sprout_stock_android9.zip`
-- Now switch back to `Slot A` and boot TWRP again
+- Now switch back to `Slot A` and boot TWRP again (must boot again, switching is not enough)
 
 **With `Slot A` as active:**
-- Install image: `boot.img` to `Boot` partition
-- Install zip file: `droidian-rootfs-api28gsi_arm64_20210531.zip` 
-- Install zip file: `droidian-devtools_arm64_20210531.zip`
-- Go back to the main menu and reboot to `System` (TWRP might complain that there is no OS installed, but that's fine)
+- Install zip file: `droidian-rootfs-api28gsi_arm64_YYYYMMDD.zip` 
+- Install zip file: `droidian-devtools_arm64_YYYYMMDD.zip`
+- Install zip file: `jasmine-adaptation-YYYYMMDD.zip`
+- Go back to the main menu and reboot to `System`
 - The first boot may take longer, and at least one spontaneous reboot is expected during the process
 - If all goes well, your phone will boot to the Droidian lock screen, the unlock code is `1234`
 - Installation is complete
@@ -52,15 +51,14 @@ TWRP:
 ```
 ssh droidian@10.15.19.82
 ```
-The password is `1234` (on Windows, you may need [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/))
-- Apply device-specific tweaks by running:
+The password is `1234`
 
-```
-wget https://github.com/Droidian-Mi-A2-6X/droidian-tweaks/raw/master/setup.sh && chmod +x setup.sh && ./setup.sh
-```
+## Notes
+### Applications
+You can find a list of mobile-friendly Linux applications at [LINMOBapps](https://linmobapps.frama.io/).
 
-- You can also upgrade to the latest `bookworm` version of Droidian **after** doing all available updates from the `Software` application. Run this on the device itself:
-
+### Update to bookworm
+You can upgrade to the latest `bookworm` version of Droidian **after** doing all available updates from the `Software` application. Run this on the device itself:
 ```
 sudo apt install droidian-upgrade-bookworm
 sudo apt update
@@ -70,8 +68,6 @@ sudo apt dist-upgrade
 sudo apt clean
 systemctl reboot
 ```
-
-## Notes
 
 ### Mobile data
 Mobile data should work, but it needs some manual tweaking. The good part is that the configuration is persistent, so you need to do this only once.
@@ -98,6 +94,8 @@ Otherwise we'll have to give the same settings to [oFono](https://en.wikipedia.o
 [Shouko](https://いらっしゃい.みんな/)
 
 [Droidian](http://droidian.org/)
+
+[Mobian](https://mobian-project.org/)
 
 [UBports](https://ubuntu-touch.io/)
 
