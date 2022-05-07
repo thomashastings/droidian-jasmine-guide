@@ -54,8 +54,11 @@ ssh droidian@10.15.19.82
 The password is `1234`
 
 ## Notes
+### Porting status
+You can check out the status of the port [here](https://github.com/orgs/Droidian-Mi-A2-6X/projects/1)
+
 ### Applications
-You can find a list of mobile-friendly Linux applications at [LINMOBapps](https://linmobapps.frama.io/).
+You can find a list of mobile-friendly Linux applications at [LinuxPhoneApps](https://linuxphoneapps.org/)
 
 ### Update to bookworm
 You can upgrade to the latest `bookworm` version of Droidian **after** doing all available updates from the `Software` application. Run this on the device itself:
@@ -92,6 +95,8 @@ Otherwise we'll have to give the same settings to [oFono](https://en.wikipedia.o
 
 ## Credit
 [Shouko](https://いらっしゃい.みんな/)
+
+[Kisekinopureya](https://github.com/kisekinopureya)
 
 [Droidian](http://droidian.org/)
 
