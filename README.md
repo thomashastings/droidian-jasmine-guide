@@ -10,7 +10,7 @@ A collection of tips on how to install and use Droidian on the Xiaomi Mi A2 (jas
 
 ## Installation
 ### 0. Download files
-- [Droidian `rootfs` and `devtools`](https://github.com/droidian-images/rootfs-api28gsi-all/releases) for `arm64`
+- [Droidian `rootfs` and `devtools`](https://github.com/droidian-images/rootfs-api28gsi-all/releases) for `arm64` (nightly releases include devtools)
 - [Adaptation](https://github.com/thomashastings/droidian-recovery-adaptation-jasmine/releases)
 - [Android 9 Pie Firmware](https://github.com/ubports-xiaomi-sdm660/artifacts/releases/download/v0.1/jasmine_sprout_stock_android9.zip)
 - Latest [TWRP image](https://dl.twrp.me/jasmine_sprout/)
